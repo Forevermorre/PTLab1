@@ -26,14 +26,13 @@ class TestCalcRating:
             "Абрамов Петр Сергеевич": 85.3333,
             "Петров Игорь Владимирович": 79.0000
         }
-        
+
         return data, rating_scores
 
-
-    def test_init_calc_rating(self, input_data: tuple[DataType, RatingsType]) -> None:
+    def test_init_calc_rating(self, input_data: tuple[DataType,
+                                                      RatingsType]) -> None:
         calc_rating = CalcRating(input_data[0])
         assert input_data[0] == calc_rating.data
-
 
     def test_calc(self, input_data: tuple[DataType, RatingsType]) -> None:
         rating = CalcRating(input_data[0]).calc()
