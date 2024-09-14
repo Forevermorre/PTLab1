@@ -33,7 +33,7 @@ class TestJsonDataReader:
                 ("социология", 61)
             ]
         }
-        
+
         return text, data
 
     @pytest.fixture()
